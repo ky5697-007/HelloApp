@@ -2,7 +2,13 @@ package org.example;
 
 public class HelloApp {
     public static void main(String[] args) {
-            String name = args[0];  // Get the first argument
-            System.out.println("Hello, " + name + "!");
+
+        String name = world;
+
+        if (args.length > 0) {
+            name = args[0];
+        }
+
+        System.out.println("Hello, " + name + "!");
     }
 }
