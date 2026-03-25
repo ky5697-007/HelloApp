@@ -3,11 +3,17 @@ package org.example;
 public class HelloApp {
     public static void main(String[] args) {
 
+        StringBuilder names = new StringBuilder();
 
-        String names = "World";
-
-        if (args.length > 0) {
-            names = String.join(", ", args);
+        if (args.length == 0) {
+            names.append("World");
+        } else {
+            for (String name : args) {
+                if (names.length() > 0) {
+                    names.append(", ");
+                }
+                names.append(name);
+            }
         }
 
         System.out.println("Hello, " + names + "!");
