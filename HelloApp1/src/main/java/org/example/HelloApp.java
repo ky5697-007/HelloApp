@@ -2,7 +2,7 @@ package org.example;
 
 public class HelloApp {
     public static void main(String[] args) {
-            String name = args[0];  // Get the first argument
+            String name = args[0]; 
             System.out.println("Hello, " + name + "!");
     }
 }
